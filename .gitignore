@@ -1,6 +1,65 @@
+# Python bytecode / cache
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Virtual environments
 .venv/
 venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables / secrets
 .env
+.env.*
+!.env.example
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Temporary Python files
+tempCodeRunnerFile.py
+
+# Type checking / linting caches
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+
+# Local databases
+*.sqlite3
+*.db
+
+# Packaging
+*.manifest
+*.spec
+
+# PyInstaller
+*.manifest
