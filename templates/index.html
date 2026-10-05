@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGenie - AI Learning Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="badge">Google Gemini Powered</div>
+  <h1>Welcome to EduGenie</h1>
+  <p>Your personal AI tutor for learning support.</p>
+</header>
+
+<main class="grid">
+  <section class="card">
+    <h2>Ask EduGenie a Question</h2>
+    <input id="question" placeholder="Why is the sky blue?">
+    <button onclick="askQuestion()">Get Answer</button>
+    <div id="qnaResult" class="output"></div>
+  </section>
+
+  <section class="card">
+    <h2>Need an Explanation?</h2>
+    <input id="topic" placeholder="Photosynthesis">
+    <button onclick="explainTopic()">Explain</button>
+    <div id="explanationResult" class="output"></div>
+  </section>
+
+  <section class="card wide">
+    <h2>Summarize a Paragraph</h2>
+    <textarea id="summaryText" placeholder="Paste long content to summarize"></textarea>
+    <button onclick="summarizeText()">Summarize</button>
+    <div id="summaryResult" class="output"></div>
+  </section>
+
+  <section class="card wide">
+    <h2>Generate a Quiz</h2>
+    <textarea id="quizText" placeholder="Enter a topic or study passage"></textarea>
+    <button onclick="generateQuiz()">Generate Quiz</button>
+    <div id="quizResult" class="output"></div>
+  </section>
+
+  <section class="card">
+    <h2>Get Learning Recommendations</h2>
+    <input id="recommendTopic" placeholder="e.g. Linear Regression">
+    <button onclick="getRecommendations()">Get Recommendations</button>
+    <div id="recommendResult" class="output"></div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
